@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GYM</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Override Primary Color with Yellow -->
+    <style>
+        :root {
+            --bs-primary: #FFD700;
+        }
+
+        .text-primary {
+            color: #FFD700 !important;
+        }
+
+        .btn-primary {
+            background-color: #FFD700 !important;
+            border-color: #FFD700 !important;
+            color: #000 !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #e6c200 !important;
+            border-color: #e6c200 !important;
+            color: #000 !important;
+        }
+    </style>
+</head>
+
+<body>
+     <!-- Header Start -->
+     <div class="container-fluid bg-dark px-0">
+        <div class="row gx-0">
+            <div class="col-lg-3 bg-dark d-none d-lg-block">
+                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <h6 class="m-0 display-4 text-primary text-uppercase">LOGO</h6>
+                </a>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5">
+                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 display-4 text-primary text-uppercase">Gymster</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                        <div class="navbar-nav py-0">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                            <a href="shop.html" class="nav-item nav-link  active">Buy Now</a>
+
+                            <!--<a href="http://localhost/gym/" class="nav-item nav-link">Admin</a>
+                            <a href="http://localhost/gym/staff/index.php" class="nav-item nav-link">Trainer</a>-->
+                            <!--<div class="nav-item dropdown">
+                                <a href="../shopping/index.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Buy now</a>
+                               <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#supplementsModal">Supplements</a>
+                                    <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#accessoriesModal">Accessories</a>
+                                    <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#equipmentModal">Equipments</a>
+                                </div
+                            </div>>--> 
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block" id="membershipModalLabel">Join Us</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Pricing Cards Section -->
+    <style>
+        .pricing-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        .pricing-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+    
+        .bg-yellow-light {
+            background-color: #fff9db;
+        }
+    
+        .price-tag {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            background-color: #ffc107;
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+    </style>
+    
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 text-uppercase">Our Own Products</h1>
+        </div>
+        <div class="row g-4">
+    
+            <!-- Repeatable Pricing Card -->
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card pricing-card h-100 border-0">
+                    <div class="position-relative">
+                        <img src="./img/suppliment1.avif" class="card-img-top" alt="Basic Plan">
+                        <div class="price-tag">Rs 2900</div>
+                    </div>
+                    <div class="card-body text-center bg-yellow-light">
+                        <h5 class="card-title text-uppercase">Sup 1</h5>
+                        <p class="card-text">Access to gym floor and cardio zone.</p>
+                        <a href="#" class="btn btn-dark mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card pricing-card h-100 border-0">
+                    <div class="position-relative">
+                        <img src="./img/suppliment1.avif" class="card-img-top" alt="Standard Plan">
+                        <div class="price-tag">Rs 2900</div>
+                    </div>
+                    <div class="card-body text-center bg-yellow-light">
+                        <h5 class="card-title text-uppercase">Sup 2</h5>
+                        <p class="card-text">Includes group classes & personal assessment.</p>
+                        <a href="#" class="btn btn-dark mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card pricing-card h-100 border-0">
+                    <div class="position-relative">
+                        <img src="./img/suppliment1.avif" class="card-img-top" alt="Premium Plan">
+                        <div class="price-tag">Rs 2900</div>
+                    </div>
+                    <div class="card-body text-center bg-yellow-light">
+                        <h5 class="card-title text-uppercase">Sup 3</h5>
+                        <p class="card-text">All-access membership + personal trainer.</p>
+                        <a href="#" class="btn btn-dark mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card pricing-card h-100 border-0">
+                    <div class="position-relative">
+                        <img src="./img/equip1.jpeg" class="card-img-top" alt="Student Plan">
+                        <div class="price-tag">Rs 2900</div>
+                    </div>
+                    <div class="card-body text-center bg-yellow-light">
+                        <h5 class="card-title text-uppercase">Student Plan</h5>
+                        <p class="card-text">Special pricing for students with valid ID.</p>
+                        <a href="#" class="btn btn-dark mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card pricing-card h-100 border-0">
+                    <div class="position-relative">
+                        <img src="./img/equip1.jpeg" class="card-img-top" alt="Family Plan">
+                        <div class="price-tag">Rs 2900</div>
+                    </div>
+                    <div class="card-body text-center bg-yellow-light">
+                        <h5 class="card-title text-uppercase">Family Plan</h5>
+                        <p class="card-text">Access for up to 4 family members.</p>
+                        <a href="#" class="btn btn-dark mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card pricing-card h-100 border-0">
+                    <div class="position-relative">
+                        <img src="./img/equip1.jpeg" class="card-img-top" alt="Senior Plan">
+                        <div class="price-tag">Rs 2900</div>
+                    </div>
+                    <div class="card-body text-center bg-yellow-light">
+                        <h5 class="card-title text-uppercase">Senior Plan</h5>
+                        <p class="card-text">Gentle fitness sessions tailored for seniors.</p>
+                        <a href="#" class="btn btn-dark mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 7 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card pricing-card h-100 border-0">
+                    <div class="position-relative">
+                        <img src="./img/access1.jpg" class="card-img-top" alt="Weekend Plan">
+                        <div class="price-tag">Rs 2900</div>
+                    </div>
+                    <div class="card-body text-center bg-yellow-light">
+                        <h5 class="card-title text-uppercase">Weekend Plan</h5>
+                        <p class="card-text">Gym access on Saturdays and Sundays only.</p>
+                        <a href="#" class="btn btn-dark mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 8 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card pricing-card h-100 border-0">
+                    <div class="position-relative">
+                        <img src="./img/access1.jpg" class="card-img-top" alt="Couples Plan">
+                        <div class="price-tag">Rs 2900</div>
+                    </div>
+                    <div class="card-body text-center bg-yellow-light">
+                        <h5 class="card-title text-uppercase">Couples Plan</h5>
+                        <p class="card-text">Train together and save with dual membership.</p>
+                        <a href="#" class="btn btn-dark mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 9 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card pricing-card h-100 border-0">
+                    <div class="position-relative">
+                        <img src="./img/access1.jpg" class="card-img-top" alt="Day Pass">
+                        <div class="price-tag">Rs 2900</div>
+                    </div>
+                    <div class="card-body text-center bg-yellow-light">
+                        <h5 class="card-title text-uppercase">Day Pass</h5>
+                        <p class="card-text">Perfect for one-time visits or trials.</p>
+                        <a href="#" class="btn btn-dark mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+
+    <style>
+    .contact-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .contact-card:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-secondary px-5 mt-5">
+    <div class="row gx-5">
+        <div class="col-lg-8 col-md-6">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                    <div class="d-flex mb-2">
+                        <i class="bi bi-geo-alt text-primary me-2"></i>
+                        <p class="mb-0">Address</p>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <i class="bi bi-envelope-open text-primary me-2"></i>
+                        <p class="mb-0">Email.com</p>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <i class="bi bi-telephone text-primary me-2"></i>
+                        <p class="mb-0">+012 345 67890</p>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-primary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Quick Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Trainers</a>
+                        <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Orders</a>
+                        <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Find Us On Map</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <iframe src="https://www.google.com/maps/embed?pb=...your-map-embed-link..." width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-warning p-5">
+                <h4 class="text-uppercase text-white mb-4">Register</h4>
+                <h6 class="text-uppercase text-white">Subscribe Now</h6>
+                <p class="text-light">Amet justo diam dolor rebum lorem sit stet sea justo kasd</p>
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
